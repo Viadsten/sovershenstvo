@@ -1,0 +1,461 @@
+<head>
+    <link href="item.css" rel="stylesheet">
+</head>
+<main>
+    <section class="main">
+        <section class="rate">
+            <p>
+            <span class="rate__title">Курс ЦБ: </span>$ – <span class="rate__dollar"></span> € – <span class="rate_euro"></span>
+            </p>
+        </section>
+    </section>
+    <div class="wrapper">
+        <section class="breadcrumb">
+            <p>главная - каталог - мебель - название товара </p>
+        </section>
+        <h1 class="title title_item">
+            <?=$item['name']?>
+        </h1>
+    </div>
+    <div class="wrapper">
+        <div class="item">
+            <div class="item__slider__wrap">
+                <div class="item__slider">
+                    <div class="item__slider_nav">
+                        <div class="slide">
+                            <img src="https://kanchi.ru/<?=$item['img']?>" alt="item">
+                        </div>
+                        <div class="slide">
+                            <img src="https://kanchi.ru/<?=$item['img']?>" alt="item">
+                        </div>
+                        <div class="slide">
+                            <img src="https://kanchi.ru/<?=$item['img']?>" alt="item">
+                        </div>
+                        <div class="slide">
+                            <img src="https://kanchi.ru/<?=$item['img']?>" alt="item">
+                        </div>
+                    </div>
+                    <div class="item__slider_for">
+                        <div class="slide">
+                            <img src="https://kanchi.ru/<?=$item['img']?>" alt="item">
+                        </div>
+                        <div class="slide">
+                            <img src="https://kanchi.ru/<?=$item['img']?>" alt="item">
+                        </div>
+                        <div class="slide">
+                            <img src="https://kanchi.ru/<?=$item['img']?>" alt="item">
+                        </div>
+                        <div class="slide">
+                            <img src="https://kanchi.ru/<?=$item['img']?>" alt="item">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__buttons">
+                    <a href="#" class="slider__button__item">
+                        <img src="/img/icons/slider_btn_01.png" alt="Заказать образец">
+                        Заказать образец
+                    </a>
+                    <a href="#" class="slider__button__item">
+                        <img src="/img/icons/slider_btn_02.png" alt="Видеопросмотр">
+                        Видеопросмотр
+                    </a>
+                    <a href="#" class="slider__button__item">
+                        <img src="/img/icons/slider_btn_03.png" alt="Каталог домой">
+                        Каталог домой
+                    </a>
+                </div>
+            </div>
+            <div class="item__desc">
+                <div class="item__desc__prop">
+                    <b>артикул: <?=$item['article']?></b>
+                    <b>Статус: <?=$item['status']?></b>
+                    <span>Фабрика: SIGNORINI & COCO</span>
+                    <span>Предмет: столик</span>
+                    <span>Страна производства: Италия</span>
+                    <span>Ценовой сегмент: Средний</span>
+                    <span>Стиль: Классика</span>
+                    <span>Отделка: керамика</span>
+                </div>
+                <div class="item__desc__buy">
+                    <div class="buy__cost">
+                        <span class="cost__now"><?=$item['price']?> &#8381;</span> <span class="cost__before"><?=$item['old_price']?> &#8381;</span>
+                    </div>
+                    <p class="buy__sub">
+                        * Цена товара зависит от варианта исполнения и объёма заказа
+                    </p>
+                    <div class="item__desc__counter">
+                        <div class="item-list__counter">
+                            <span>- 1 +</span>
+                        </div>
+                        <div class="item-list__buy" item_id="<?=$item['id']?>" item_count="1" market_id="<?=$item['market_id']?>">
+                            <span>Купить</span>
+                        </div>
+                    </div>
+                    <p class="get__action">Запросить скидку</p>
+                    <div class="item__desc__tools">
+                        <div class="tools__item tools__to_loved">
+                            <img src="/img/icons/loved.svg" alt="loved">
+                                отложить/подумать
+                        </div>
+                        <div class="tools__item tools__to_cart" item_id="<?=$item['id']?>" item_count="1" market_id="<?=$item['market_id']?>">
+                            <img src="/img/icons/cart.svg" alt="cart">
+                                в корзину
+                        </div>
+                        <div class="tools__item tools__to_proc">
+                            <img src="/img/icons/procent.svg" alt="proc">
+                                в рассрочку
+                        </div>
+                    </div>
+                </div>
+                <div class="item__desc__deliver">
+                    <div class="item__desc__deliver__shelf">
+                        <img src="/img/icons/deliver_01.svg" alt="deliver">
+                        <img src="/img/icons/deliver_02.svg" alt="deliver">
+                        <img src="/img/icons/deliver_03.svg" alt="deliver">
+                    </div>
+                    <img src="/img/arrow.svg" alt="arrow" class="item__desc__deliver__arrow">
+                    <p>Доставка дивана ХХХХХ арт организовывается силами нашей компании , преимущественно за счёт заказчика , стоимость уточняйте по тел +7 9219416566, Заказ может быть доставлен в любой город России, Казахстана, Белорусии ,Европы , ОАЭ и США.</p>
+                    <div class="flag__shelf">
+                        <div class="flag__item">
+                            <img src="/img/icons/flag_01.svg" alt="flag">
+                        </div>
+                        <div class="flag__item">
+                            <img src="/img/icons/flag_02.svg" alt="flag">
+                        </div>
+                        <div class="flag__item">
+                            <img src="/img/icons/flag_03.svg" alt="flag">
+                        </div>
+                        <div class="flag__item">
+                            <img src="/img/icons/flag_04.svg" alt="flag">
+                        </div>
+                        <div class="flag__item">
+                            <img src="/img/icons/flag_05.svg" alt="flag">
+                        </div>
+                        <div class="flag__item">
+                            <img src="/img/icons/flag_06.svg" alt="flag">
+                        </div>
+                        <div class="flag__item">
+                            <img src="/img/icons/flag_07.svg" alt="flag">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="share">
+            <div class="share__left">
+                <div>
+                    <a href="#">
+                       <img src="/img/icons/pdf.svg" alt="Скачать"> Скачать каталог
+                    </a>
+                    <a href="#">
+                        2019 коллекция
+                    </a>
+                    <a href="#">
+                        2020 коллекция
+                    </a>
+                </div>
+                <div>
+                    <a href="#">поделиться <img src="/img/icons/fb.svg" alt="social"> <img src="/img/icons/vk.svg" alt="social"> <img src="/img/icons/ig.svg" alt="social"></a>
+                    <a href="#">О бренде</a>
+                </div>
+            </div>
+            <div class="share__right">
+                <p class="title">
+                    Не уверены в выборе?
+                </p>
+                <p class="subtitle">
+                    Воспользуйтесь нашей службой консьержа, советом дизайнера - профессионала по декорированию интерьера. 
+                </p>
+                <a href="#" class="help">
+                    Помочь в подборе ?
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="item__fulldesc">
+            <b>
+                ОПИСАНИЕ:
+            </b>
+            <p>
+                <?=$item['description']?>
+            </p>
+        </div>
+    </div>
+    <section class="discount">
+        <div class="wrapper">
+            <div class="discount__inner">
+                <h2 class="title title__discount title_min">
+                    просмотренные товары
+                </h2>
+                <div class="discount__slider">
+                    <div>
+                        <div class="item__card">
+                            <div class="item__img">
+                                <img src="/img/main/item2.png" alt="item">
+                            </div>
+                            <p class="item__title">
+                                Eichholtz
+                            </p>
+                            <p class="item__price">
+                                10 832 &#8381;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item__card">
+                            <div class="item__img">
+                                <img src="/img/main/item.png" alt="item">
+                            </div>
+                            <p class="item__title">
+                                Eichholtz
+                            </p>
+                            <p class="item__price">
+                                10 832 &#8381;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item__card">
+                            <div class="item__img">
+                                <img src="/img/main/item2.png" alt="item">
+                            </div>
+                            <p class="item__title">
+                                Eichholtz
+                            </p>
+                            <p class="item__price">
+                                10 832 &#8381;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item__card">
+                            <div class="item__img">
+                                <img src="/img/main/item.png" alt="item">
+                            </div>
+                            <p class="item__title">
+                                Eichholtz
+                            </p>
+                            <p class="item__price">
+                                10 832 &#8381;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item__card">
+                            <div class="item__img">
+                                <img src="/img/main/item.png" alt="item">
+                            </div>
+                            <p class="item__title">
+                                Eichholtz
+                            </p>
+                            <p class="item__price">
+                                10 832 &#8381;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="discount">
+        <div class="wrapper">
+            <div class="discount__inner">
+                <h2 class="title title__discount title_min">
+                    товары со скидкой
+                </h2>
+                <div class="discount__slider">
+                    <div>
+                        <div class="item__card">
+                            <div class="item__img">
+                                <img src="/img/main/item2.png" alt="item">
+                            </div>
+                            <p class="item__title">
+                                Eichholtz
+                            </p>
+                            <p class="item__price">
+                                10 832 &#8381;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item__card">
+                            <div class="item__img">
+                                <img src="/img/main/item.png" alt="item">
+                            </div>
+                            <p class="item__title">
+                                Eichholtz
+                            </p>
+                            <p class="item__price">
+                                10 832 &#8381;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item__card">
+                            <div class="item__img">
+                                <img src="/img/main/item2.png" alt="item">
+                            </div>
+                            <p class="item__title">
+                                Eichholtz
+                            </p>
+                            <p class="item__price">
+                                10 832 &#8381;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item__card">
+                            <div class="item__img">
+                                <img src="/img/main/item.png" alt="item">
+                            </div>
+                            <p class="item__title">
+                                Eichholtz
+                            </p>
+                            <p class="item__price">
+                                10 832 &#8381;
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item__card">
+                            <div class="item__img">
+                                <img src="/img/main/item.png" alt="item">
+                            </div>
+                            <p class="item__title">
+                                Eichholtz
+                            </p>
+                            <p class="item__price">
+                                10 832 &#8381;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="wrapper">
+        <h2 class="title title_min title_service">
+            Воспользуйтесь дополнитульными услугами 
+        </h2>
+        <div class="service">
+            <div class="service__item">
+                <span>
+                    <img src="/img/icons/star.svg" alt="item">
+                </span>
+                <span>
+                    <b>Декорирование окна</b> <br> Мы имеем огромный опыт в декорирование окна и свой пошивочный цех, который способен решить задачи любой сложности.
+                </span>
+            </div>
+            <div class="service__item">
+                <span>
+                    <img src="/img/icons/star.svg" alt="item">
+                </span>
+                <span>
+                    <b>Разработать проект кухни</b> <br> Вы ставите задачу, даете нам дизайн-проект, сообщаете в какую сумму вы хотели бы уложиться заказывая кухню известного бренда (работаем только с импортными производителями премиум и выского ценового сегмента).
+                </span>
+            </div>
+            <div class="service__item">
+                <span>
+                    <img src="/img/icons/star.svg" alt="item">
+                </span>
+                <span>
+                <b>Произвести экспертизу вашего счета</b> <br> Если Вы сомнениваетесь в актуальности цен, отправьте нам ссылку на страницу сайта с указанной ценой или копию выставленного вам счета. Мы проведем анализ и точно предложим лучшие условия.
+                </span>
+            </div>
+            <div class="service__item">
+                <span>
+                    <img src="/img/icons/star.svg" alt="item">
+                </span>
+                <span>
+                    <b>Вам нужен дизайн проект квартиры?</b> <br> хотите получить дизайн-проект от профессионалов, известных архитекторов, дизайнеров интерьера в нашей стране или зарубежного процессионала, обращайтесь.
+                </span>
+            </div>
+            <div class="service__item">
+                <span>
+                    <img src="/img/icons/star.svg" alt="item">
+                </span>
+                <span>
+                    <b>Подобрать керамическую плитку</b> <br> Вы ставите задачу, мы ходим по магазинам, выбираем, предлагаем огромный ассортимент из наших каталогов, экономия времени и денег вам гарантированно.
+                </span>
+            </div>
+            <div class="service__item">
+                <span>
+                    <img src="/img/icons/star.svg" alt="item">
+                </span>
+                <span>
+                    <b>Вам нужен карниз для штор?</b> <br> любые карнизы для штор с ручным или моторизированным управлением самых известных брендов доступны в нашем салоне. Монтаж/демонтаж.
+                </span>
+            </div>
+            <div class="service__item">
+                <span>
+                    <img src="/img/icons/star.svg" alt="item">
+                </span>
+                <span>
+                    <b>Подобрать освещение</b> <br> Мы работаем более чем с 600 фабриками мира, неужели вы думаете, что мы не сможем вам найти, то что вам нужно.
+                </span>
+            </div>
+            <div class="service__item">
+                <span>
+                    <img src="/img/icons/star.svg" alt="item">
+                </span>
+                <span>
+                <b>химчистка штор</b> <br> демонтируем ваши шторы, проведем химчистку, установим шторы и произведем драпировку тканей/штор.
+                </span>
+            </div>
+            <div class="service__item">
+                <span>
+                    <img src="/img/icons/star.svg" alt="item">
+                </span>
+                <span>
+                <b>подобрать аксессуары для штор</b> <br> Наш салон декорирование имеет один из лучших в россии ассортимент позумента для штор.
+                </span>
+            </div>
+            <div class="service__item">
+                <span>
+                    <img src="/img/icons/star.svg" alt="item">
+                </span>
+                <span>
+                    <b>просчет колличества обоев</b> <br> если вы запланировали покупку настенных покрытий высокого ценового сегмента, очень важно заказать именно, то колличество, которое вам нужно, так как заказной товар обратно не принимают, рассчитать раппорты дизайна с привязкой к вашему проекту помогут наши профессионалы. Услуга доступка только при заказе у нас, или при заказе обоев через экспертизу счета.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <section class="order">
+            <form action="" method="POST" id="order">
+                <div class="order__col">
+                    <div class="form-group">
+                        <label>Заявка на услугу</label>
+                        <select class="sort__select">
+                            <option data-display="тип помещения">тип помещения</option>
+                            <option value="1">Some option</option>
+                            <option value="2">Another option</option>
+                            <option value="3" disabled>A disabled option</option>
+                            <option value="4">Potato</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>опишите задание</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Как к вам можно обращаться?</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="order__col">
+                    <div class="form-group">
+                        <label>Ваш номер для связи</label>
+                        <input type="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Адрес электронной почты </label>
+                        <input type="email">
+                    </div>
+                    <input class="order__submit" type="submit" value="Оставить заявку">
+                </div>
+            </form>
+        </section>
+    </div>
+</main>
